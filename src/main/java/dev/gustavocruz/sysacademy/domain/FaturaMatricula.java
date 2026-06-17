@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "faturas_matriculas")
+@Table(name = "fatura_matriculas")
 public class FaturaMatricula {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
