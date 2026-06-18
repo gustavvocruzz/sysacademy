@@ -1,4 +1,4 @@
-package dev.gustavocruz.sysacademy.domain.dtos;
+package dev.gustavocruz.sysacademy.dtos;
 
 
 import dev.gustavocruz.sysacademy.domain.Aluno;

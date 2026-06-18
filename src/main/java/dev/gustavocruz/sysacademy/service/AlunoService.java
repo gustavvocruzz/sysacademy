@@ -1,8 +1,8 @@
-package dev.gustavocruz.sysacademy.domain.service;
+package dev.gustavocruz.sysacademy.service;
 
 import dev.gustavocruz.sysacademy.domain.Aluno;
-import dev.gustavocruz.sysacademy.domain.dtos.AlunoRequest;
-import dev.gustavocruz.sysacademy.domain.dtos.AlunoResponse;
+import dev.gustavocruz.sysacademy.dtos.AlunoRequest;
+import dev.gustavocruz.sysacademy.dtos.AlunoResponse;
 import dev.gustavocruz.sysacademy.repository.AlunoRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
