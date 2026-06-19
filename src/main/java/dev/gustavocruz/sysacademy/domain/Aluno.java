@@ -44,6 +44,7 @@ public class Aluno {
     @PrePersist
     public void prePersist(){
         dataCadastro= LocalDateTime.now();
+        dataAtualizacao = LocalDateTime.now();
     }
 
     @PreUpdate
