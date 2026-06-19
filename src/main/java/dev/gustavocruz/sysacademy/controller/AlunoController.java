@@ -3,6 +3,7 @@ package dev.gustavocruz.sysacademy.controller;
 import dev.gustavocruz.sysacademy.dtos.AlunoRequest;
 import dev.gustavocruz.sysacademy.dtos.AlunoResponse;
 import dev.gustavocruz.sysacademy.service.AlunoService;
+import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -20,7 +21,7 @@ public class AlunoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public AlunoResponse cadastrar(@RequestBody AlunoRequest request) {
+    public AlunoResponse cadastrar(@RequestBody @Valid AlunoRequest request) {
         return service.cadastrar(request);
     }
 
@@ -35,7 +36,7 @@ public class AlunoController {
     }
 
     @PutMapping("/{id}")
-    public AlunoResponse atualizar(@PathVariable Long id, @RequestBody AlunoRequest request){
+    public AlunoResponse atualizar(@PathVariable Long id, @RequestBody @Valid AlunoRequest request){
         return service.atualizar(id, request);
     }
 
