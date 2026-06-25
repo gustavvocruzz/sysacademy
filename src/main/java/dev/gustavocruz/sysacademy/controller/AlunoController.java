@@ -1,5 +1,6 @@
 package dev.gustavocruz.sysacademy.controller;
 
+import dev.gustavocruz.sysacademy.dtos.AlunoFiltroRequest;
 import dev.gustavocruz.sysacademy.dtos.AlunoRequest;
 import dev.gustavocruz.sysacademy.dtos.AlunoResponse;
 import dev.gustavocruz.sysacademy.service.AlunoService;
@@ -26,8 +27,8 @@ public class AlunoController {
     }
 
     @GetMapping
-    public Page<AlunoResponse> listar(Pageable pageable) {
-        return service.listar(pageable);
+    public Page<AlunoResponse> listar(AlunoFiltroRequest filtro,Pageable pageable) {
+        return service.listar(filtro,pageable);
     }
 
     @GetMapping("/{id}")
