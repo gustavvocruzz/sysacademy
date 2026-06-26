@@ -23,18 +23,11 @@ public class SwaggerConfig {
                                 "Permite gerenciar alunos, matrículas, graduações e modalidades de ensino.")
                         .contact(new Contact()
                                 .name("Gustavo Cruz")
-                                .url("https://github.com/gustavvocruzz")
-                                .email("contato@gustavocruz.dev"))
-                        .license(new License()
-                                .name("MIT")
-                                .url("https://opensource.org/licenses/MIT")))
+                                .url("https://github.com/gustavvocruzz")))
                 .servers(List.of(
                         new Server()
                                 .url("http://localhost:8080")
-                                .description("Local Development Server"),
-                        new Server()
-                                .url("https://api.sysacademy.dev")
-                                .description("Production Server")
+                                .description("Local Development Server")
                 ));
     }
 }
